@@ -1,0 +1,4 @@
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_unbuf\xor_unbuf-pspicefiles\vteam.lib", offset=81, size=1296
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_unbuf\xor_unbuf-pspicefiles\xor_unbuf.lib", offset=42, size=55
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_unbuf\xor_unbuf-pspicefiles\xor_unbuf.lib", offset=98, size=56
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=431, size=56

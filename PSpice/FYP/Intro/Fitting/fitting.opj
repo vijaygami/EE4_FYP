@@ -1,0 +1,73 @@
+(ExpressProject "fitting"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\fitting.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\fitting-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\fitting-pspicefiles\schematic1\fitting.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\fitting-pspicefiles\schematic1\fitting.sim"
+        (DisplayName "SCHEMATIC1-fitting")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\fitting-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\fitting-pspicefiles\vteam.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Vijay")
+  (PartMRUSelector
+    (VTEAM
+      (FullPartName "VTEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\FITTING\FITTING-PSPICEFILES\VTEAM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\Fitting\fitting.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\Fitting\fitting.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\Fitting\fitting.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 299 0 337"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1665 25 490")
+        (Scroll "-311 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\INTRO\FITTING\FITTING.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-PSpiceFiles"))

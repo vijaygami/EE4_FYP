@@ -1,0 +1,7 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.SUBCKT so plus_i minus_i plus_o minus_o
+Ra plus_i minus_i 1e8MEG
+Ga plus_o minus_o value={v(plus_i, minus_i)/2}
+.ENDS
+*$

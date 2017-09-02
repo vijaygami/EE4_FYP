@@ -1,0 +1,41 @@
+* PSpice Model Editor - Version 16.6.0
+
+*$
+.SUBCKT memristor plus minus 
++PARAMS: IC=1.2 
++foff=3.5e-6 
++ioff=115e-6 
++aoff=1.2
++fon=40e-6 
++ion=8.9e-6 
++aon=1.8 
++b=500e-6
++wc=107e-3 
++k1=11.3153 
++k2=4.46944e-05 
++k3=1.34192 
++k4=3.0364 
++k5=1.14919e-08 
++k6=24.1384 
++Rs=232
+*exponential function with limit
+.func expL(x,lim)= {if((x<=lim), exp(x), exp(lim)*(1+x-lim))}
+.func sinhL(x,lim)= {0.5*(expL(x,lim)-expL(-x,lim))}
+*Port Equation
+GM plus int value={sgn(v(plus,int))*k1*k2**v(w)
++*(sinhL((k3+k4*v(w))*abs(v(plus,int)),10)+k5
++*(expL(k6*abs(v(plus,int)),30)-1))}
+Rsh plus int {1/GMIN}
+Rs int minus {Rs}
+*State Equation
+Ec c 0 value={(V(int)-V(minus))/Rs}
+C1 w 0 1e-9 IC={IC} 
+R w 0 1e8MEG
+Goff 0 w value={foff*0.5*stp(V(c))
++*expL(abs(V(c))/ioff-expL((V(w)-aoff)/wc-abs(V(c))/b,10)
++-V(w)/wc,15)*(1-exp(-2*abs(V(c))/ioff))}
+Gon w 0 value={ fon*0.5*stp(-V(c))
++*expL(abs(V(c))/ion-expL((aon-V(w))/wc-abs(V(c))/b,10)
++-V(w)/wc,10)*(1-exp(-2*abs(V(c))/ion))}
+.ENDS
+*$

@@ -1,0 +1,7 @@
+.ALIASES
+V_Vin1          Vin1(+=SIN1 -=0 ) CN @IMPLY_GATE.SCHEMATIC1(sch_1):INS23626@SOURCE.VPWL_FILE.Normal(chips)
+R_R_test1          R_test1(1=0 2=VIN1 ) CN @IMPLY_GATE.SCHEMATIC1(sch_1):INS26639@ANALOG.R.Normal(chips)
+X_S2    S2(1=SIN1 2=0 3=SIN1 4=VIN1 ) CN @IMPLY_GATE.SCHEMATIC1(sch_1):INS27821@BREAKOUT.Sbreak.Normal(chips)
+_    _(Sin1=SIN1)
+_    _(Vin1=VIN1)
+.ENDALIASES

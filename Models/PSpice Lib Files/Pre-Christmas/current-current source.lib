@@ -1,0 +1,8 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.SUBCKT so pi mi po mo
+Ra n1 mi 100k
+Vo pi n1 {0}
+Fa po mo Vo 1
+.ENDS
+*$

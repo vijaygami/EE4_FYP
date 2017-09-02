@@ -1,0 +1,194 @@
+
+**** 05/28/16 09:47:52 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\mrl_novel-pspicefiles\schematic1\mrl_no
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mrl_novel.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_novel-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_novel-pspicefiles/mrl_novel.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 79.99 0 10m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MRL_NOVEL
+V_V1         VDD 0 5Vdc
+V_V2         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\v1.txt" 
+V_V3         VIN2 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\v2.txt" 
+M_T4         N02912 VIN2 VDD VDD Mbreakp           
+M_T5         N01511 N01303 VDD VDD Mbreakp           
+M_T6         N01511 N01303 0 0 Mbreakn           
+M_M3         N01303 VIN1 N00726 0 MbreakN           
+M_M4         N01303 VIN1 N02912 VDD MbreakP           
+M_M5         N01303 VIN2 N00726 0 MbreakN           
+X_M8         N00726 VIN2 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_M9         N00726 VIN1 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+
+**** RESUMING mrl_novel.cir ****
+.END
+
+
+WARNING(ORPSIM-15256): <X_M8.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_M9.INITIAL_X> not a subcircuit param
+
+**** 05/28/16 09:47:52 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\mrl_novel-pspicefiles\schematic1\mrl_no
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+**** 05/28/16 09:47:52 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\mrl_novel-pspicefiles\schematic1\mrl_no
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakp         Mbreakn         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  250.000000E-09  250.000000E-09 
+           W    6.250000E-06    2.500000E-06 
+         VTO   -1.5             1.5          
+          KP   20.000000E-06   50.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+INTERNAL ERROR -- Divide by Zero, Divide
+
+ABORTING SIMULATION
+**** 05/28/16 09:47:52 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_1\mrl_novel-pspicefiles\schematic1\mrl_no
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           8
+  External (NCNODS)                 =          14
+  Total (NUMNOD)                    =          18
+
+Total device count (NUMEL)          =          27
+  Capacitors (C)                    =           2
+  Diodes (D)                        =           4
+  VCCS (G)                          =           6
+  MosFETs (M)                       =           6
+  Resistors (R)                     =           2
+  Voltage Sources (V)               =           7
+
+Number of subcircuits (X)           =           2
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          25
+  Initial no. elements (NTTAR)      =          83
+  No. elements w/ fillin (NTTBR)    =          84
+  No. fillins (IFILL)               =           1
+  No. overflows (NTTOV)             =         158
+  No. LU operations (IOPS)          =          97
+  Percent sparsity (PERSPA)         =      86.560
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =        4213
+  No. rejected time points (NUMRTP) =          50
+  No. iterations (NUMNIT)           =       13153
+
+Load Threads                        =           2
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =         .70
+  Matrix solution                   =         .05               2
+  Readin                            =         .30
+  General setup                     =         .02
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        2.09
+  License check-out time            =        4.14
+  Total job time (using Solver 1)   =        1.11
+

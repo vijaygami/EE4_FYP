@@ -1,0 +1,478 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VSIN")
+        ("VTEAM")
+        ("TEAM")
+        ("ISIN")
+        ("R")
+    )
+    ("instances"
+        ("V1"
+            ("device_name"	"VSIN")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("VAMPL"
+                    ("value"	"2")
+                    ("pspice_param"	"VAMPL")
+                )
+                ("VOFF"
+                    ("value"	"0")
+                    ("pspice_param"	"VOFF")
+                )
+                ("FREQ"
+                    ("value"	"0.1")
+                    ("pspice_param"	"FREQ")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("DF"
+                    ("value"	"0")
+                    ("pspice_param"	"DF")
+                )
+                ("PHASE"
+                    ("value"	"0")
+                    ("pspice_param"	"PHASE")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VSIN")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("VOFF"
+                    ("value"	"0")
+                    ("pspice_param"	"VOFF")
+                )
+                ("FREQ"
+                    ("value"	"0.1")
+                    ("pspice_param"	"FREQ")
+                )
+                ("VAMPL"
+                    ("value"	"2")
+                    ("pspice_param"	"VAMPL")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("DF"
+                    ("value"	"0")
+                    ("pspice_param"	"DF")
+                )
+                ("PHASE"
+                    ("value"	"0")
+                    ("pspice_param"	"PHASE")
+                )
+            )
+        )
+        ("U1"
+            ("device_name"	"VTEAM")
+            ("pspice_path"	"X_U1")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("U2"
+            ("device_name"	"TEAM")
+            ("pspice_path"	"X_U2")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.5")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("I_ON"
+                    ("value"	"-50E-6")
+                    ("pspice_param"	"I_ON")
+                )
+                ("I_OFF"
+                    ("value"	"50E-6")
+                    ("pspice_param"	"I_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.1")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"2")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"2")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"10000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"100")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"100E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.2")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("U4"
+            ("device_name"	"TEAM")
+            ("pspice_path"	"X_U4")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.5")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("I_ON"
+                    ("value"	"-50E-6")
+                    ("pspice_param"	"I_ON")
+                )
+                ("I_OFF"
+                    ("value"	"50E-6")
+                    ("pspice_param"	"I_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.1")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"2")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"2")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"10000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"100")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"100E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.2")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("U3"
+            ("device_name"	"VTEAM")
+            ("pspice_path"	"X_U3")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("I1"
+            ("device_name"	"ISIN")
+            ("pspice_path"	"I_I1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Adc")
+                    ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"0Aac")
+                    ("pspice_param"	"AC")
+                )
+                ("IAMPL"
+                    ("value"	"200u")
+                    ("pspice_param"	"IAMPL")
+                )
+                ("FREQ"
+                    ("value"	"0.1")
+                    ("pspice_param"	"FREQ")
+                )
+                ("IOFF"
+                    ("value"	"0")
+                    ("pspice_param"	"IOFF")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("DF"
+                    ("value"	"0")
+                    ("pspice_param"	"DF")
+                )
+                ("PHASE"
+                    ("value"	"0")
+                    ("pspice_param"	"PHASE")
+                )
+            )
+        )
+        ("I2"
+            ("device_name"	"ISIN")
+            ("pspice_path"	"I_I2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Adc")
+                    ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"0Aac")
+                    ("pspice_param"	"AC")
+                )
+                ("IAMPL"
+                    ("value"	"120u")
+                    ("pspice_param"	"IAMPL")
+                )
+                ("FREQ"
+                    ("value"	"0.0001")
+                    ("pspice_param"	"FREQ")
+                )
+                ("IOFF"
+                    ("value"	"0")
+                    ("pspice_param"	"IOFF")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("DF"
+                    ("value"	"0")
+                    ("pspice_param"	"DF")
+                )
+                ("PHASE"
+                    ("value"	"0")
+                    ("pspice_param"	"PHASE")
+                )
+            )
+        )
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1000k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+            )
+        )
+    )
+)

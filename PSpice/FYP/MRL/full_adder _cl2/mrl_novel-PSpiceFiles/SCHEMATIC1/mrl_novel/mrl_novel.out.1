@@ -1,0 +1,279 @@
+
+**** 06/10/16 23:57:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\mrl_novel-pspicefiles\schematic1\mr
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mrl_novel.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_novel-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_novel-pspicefiles/mrl_novel.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 159.9 0 10m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MRL_NOVEL
+V_Vdd         VDD 0 5Vdc
+V_Vin1         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\v1.txt" 
+V_Vin2         VIN2 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\v2.txt" 
+M_T4         N02912 VIN2 VDD VDD Mbreakp           
+M_T5         XOR N01303 VDD VDD Mbreakp           
+M_T6         XOR N01303 0 0 Mbreakn           
+M_M3         N01303 VIN1 N03069 0 Mbreakn           
+M_M4         N01303 VIN1 N02912 VDD Mbreakp           
+M_M5         N01303 VIN2 N03069 0 Mbreakn           
+X_M32         VIN1 N03069 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M33         VIN2 N03069 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+V_Vin3         VIN3 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\v3.txt" 
+M_M36         N33382 XOR N33462 0 MbreakN           
+M_T9         SUM N33382 0 0 Mbreakn           
+M_M35         N33382 XOR N33434 VDD MbreakP           
+M_T7         N33434 VIN3 VDD VDD Mbreakp           
+M_M34         N33382 VIN3 N33462 0 Mbreakn           
+M_T8         SUM N33382 VDD VDD Mbreakp           
+M_T22         COUT N43139 VDD VDD Mbreakp           
+M_T23         COUT N43139 0 0 Mbreakn           
+X_M38         VIN3 N33462 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M37         XOR N33462 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+M_T24         N43139 N33462 0 0 Mbreakn           
+M_T25         N43139 N03069 0 0 Mbreakn           
+M_T26         N61439 N03069 VDD VDD Mbreakp           
+M_M39         N43139 N33462 N61439 VDD MbreakP           
+
+**** RESUMING mrl_novel.cir ****
+.END
+
+
+WARNING(ORPSIM-15256): <X_M32.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_M33.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_M38.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_M37.INITIAL_X> not a subcircuit param
+
+**** 06/10/16 23:57:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\mrl_novel-pspicefiles\schematic1\mr
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+**** 06/10/16 23:57:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\mrl_novel-pspicefiles\schematic1\mr
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakp         Mbreakn         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  250.000000E-09  250.000000E-09 
+           W    7.250000E-06    2.500000E-06 
+         VTO   -1.5             1.25         
+          KP   20.000000E-06   50.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 06/10/16 23:57:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\mrl_novel-pspicefiles\schematic1\mr
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  SUM) 2.672E-09  (  VDD)    5.0000  (  XOR) 2.636E-09  ( COUT) 2.672E-09      
+
+( VIN1)    0.0000  ( VIN2)    0.0000  ( VIN3)    0.0000  (N01303)    5.0000     
+
+(N02912)    5.0000 (N03069)    0.0000 (N33382)    5.0000 (N33434)    5.0000     
+
+(N33462) 1.318E-09 (N43139)    5.0000 (N61439)    5.0000 (X_M32.p1)    0.0000   
+
+(X_M32.p2)    1.0000                  (X_M33.p1)    0.0000                      
+
+(X_M33.p2)    1.0000                  (X_M37.p1)    0.0000                      
+
+(X_M37.p2)    1.0000                  (X_M38.p1)    0.0000                      
+
+(X_M38.p2)    1.0000                  (X_M32.state)     .3000                   
+
+(X_M33.state)     .3000               (X_M37.state)     .3000                   
+
+(X_M38.state)     .3000               
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -4.509E-11
+    V_Vin1       0.000E+00
+    V_Vin2       0.000E+00
+    V_Vin3       6.659E-14
+    X_M32.Vxon   3.100E-13
+    X_M32.Vxoff  -7.100E-13
+    X_M33.Vxon   3.100E-13
+    X_M33.Vxoff  -7.100E-13
+    X_M38.Vxon   3.100E-13
+    X_M38.Vxoff  -7.100E-13
+    X_M37.Vxon   3.100E-13
+    X_M37.Vxoff  -7.100E-13
+
+    TOTAL POWER DISSIPATION   2.28E-10  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+INTERNAL ERROR -- Divide by Zero, Divide
+
+ABORTING SIMULATION
+**** 06/10/16 23:57:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\full_adder _cl2\mrl_novel-pspicefiles\schematic1\mr
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          16
+  External (NCNODS)                 =          28
+  Total (NUMNOD)                    =          36
+
+Total device count (NUMEL)          =          58
+  Capacitors (C)                    =           4
+  Diodes (D)                        =           8
+  VCCS (G)                          =          12
+  MosFETs (M)                       =          18
+  Resistors (R)                     =           4
+  Voltage Sources (V)               =          12
+
+Number of subcircuits (X)           =           4
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          48
+  Initial no. elements (NTTAR)      =         183
+  No. elements w/ fillin (NTTBR)    =         191
+  No. fillins (IFILL)               =           8
+  No. overflows (NTTOV)             =         426
+  No. LU operations (IOPS)          =         565
+  Percent sparsity (PERSPA)         =      91.710
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =        2069
+  No. rejected time points (NUMRTP) =          23
+  No. iterations (NUMNIT)           =        6372
+
+Load Threads                        =           4
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =         .65
+  Matrix solution                   =         .03               3
+  Readin                            =         .02
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =         .02              22
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        2.06
+  License check-out time            =       18.61
+  Total job time (using Solver 1)   =         .76
+

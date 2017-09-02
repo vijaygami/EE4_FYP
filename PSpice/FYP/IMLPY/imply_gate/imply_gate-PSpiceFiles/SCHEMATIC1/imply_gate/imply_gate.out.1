@@ -1,0 +1,57 @@
+
+**** 05/30/16 18:21:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-pspicefiles\schematic1\imp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "imply_gate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../imply_gate-pspicefiles/imply_gate.lib" 
+.LIB "../../../imply_gate-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5 0 100m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source IMPLY_GATE
+V_Vin1         SIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\v1.txt" 
+-------$
+ERROR -- Time not monotonically increasing in File "v1.txt" Line 2
+X_M1         VG VIN1 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_M2         VG VIN2 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+R_Rg         0 VG  3.6K TC=0,0 
+X_S2    SIN1 0 SIN1 VIN1 SCHEMATIC1_S2 
+R_Rtest         0 VIN1  50K TC=0,0 
+
+.subckt SCHEMATIC1_S2 1 2 3 4  
+S_S2         3 4 1 2 Sbreak
+RS_S2         1 2 1G
+.ends SCHEMATIC1_S2
+
+**** RESUMING imply_gate.cir ****
+.END
+

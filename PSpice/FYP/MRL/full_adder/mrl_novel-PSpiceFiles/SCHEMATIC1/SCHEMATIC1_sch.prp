@@ -1,0 +1,1407 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+        ("VPWL_FILE")
+        ("MbreakP3")
+        ("MbreakN3")
+        ("MbreakN")
+        ("MbreakP")
+        ("VTEAM_2")
+    )
+    ("instances"
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-192.1pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("Vin1"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin1")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\MRL\\full_adder\\v1.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("Vin2"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin2")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\MRL\\full_adder\\v2.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("T4"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T4")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"47.81e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T5"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T5")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T6"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T6")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"11.67e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("M3"
+            ("device_name"	"MbreakN")
+            ("pspice_path"	"M_M3")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("M4"
+            ("device_name"	"MbreakP")
+            ("pspice_path"	"M_M4")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"47.81e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("M5"
+            ("device_name"	"MbreakN")
+            ("pspice_path"	"M_M5")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("M32"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M32")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("M33"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M33")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("Vin3"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin3")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\MRL\\full_adder\\v3.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M36"
+            ("device_name"	"MbreakN")
+            ("pspice_path"	"M_M36")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("M38"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M38")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+                ("BiasValue Power"
+                    ("value"	"70.18e-24W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("T9"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T9")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"11.95e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("M35"
+            ("device_name"	"MbreakP")
+            ("pspice_path"	"M_M35")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"47.81e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("T7"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T7")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"47.81e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("M37"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M37")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+                ("BiasValue Power"
+                    ("value"	"70.18e-24W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("M34"
+            ("device_name"	"MbreakN")
+            ("pspice_path"	"M_M34")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+        ("T8"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T8")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T21"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T21")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"2.783pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T22"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T22")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"2.783pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T19"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T19")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"11.95e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T18"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T18")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"25.05pW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T23"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T23")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"5.333e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("M39"
+            ("device_name"	"MbreakP")
+            ("pspice_path"	"M_M39")
+            ("level"	"0")
+            ("model_params"
+                ("BiasValue Power"
+                    ("value"	"47.81e-21W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+            )
+        )
+    )
+)

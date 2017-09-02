@@ -1,0 +1,792 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+        ("VPWL_FILE")
+        ("MbreakN3")
+        ("MbreakP3")
+        ("VTEAM_2")
+    )
+    ("instances"
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("Vin1"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin1")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\MRL\\xor_unbuf\\v1.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("Vin2"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin2")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\MRL\\xor_unbuf\\v2.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("T6"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T6")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T3"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T3")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T1"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T1")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T5"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T5")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T4"
+            ("device_name"	"MbreakP3")
+            ("pspice_path"	"M_T4")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("T2"
+            ("device_name"	"MbreakN3")
+            ("pspice_path"	"M_T2")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+            )
+        )
+        ("M32"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M32")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("M33"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M33")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("M34"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M34")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("M35"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M35")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("M36"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M36")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+        ("M37"
+            ("device_name"	"VTEAM_2")
+            ("pspice_path"	"X_M37")
+            ("level"	"0")
+            ("model_params"
+                ("INITIAL_X"
+                    ("value"	"0.75")
+                    ("pspice_param"	"INITIAL_X")
+                )
+                ("X_OFF"
+                    ("value"	"1")
+                    ("pspice_param"	"X_OFF")
+                )
+                ("X_ON"
+                    ("value"	"0")
+                    ("pspice_param"	"X_ON")
+                )
+                ("V_ON"
+                    ("value"	"-0.8")
+                    ("pspice_param"	"V_ON")
+                )
+                ("V_OFF"
+                    ("value"	"0.8")
+                    ("pspice_param"	"V_OFF")
+                )
+                ("K_ON"
+                    ("value"	"-0.036363636")
+                    ("pspice_param"	"K_ON")
+                )
+                ("K_OFF"
+                    ("value"	"0.036363636")
+                    ("pspice_param"	"K_OFF")
+                )
+                ("ALPHA_ON"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_ON")
+                )
+                ("ALPHA_OFF"
+                    ("value"	"0.1")
+                    ("pspice_param"	"ALPHA_OFF")
+                )
+                ("R_OFF"
+                    ("value"	"50000")
+                    ("pspice_param"	"R_OFF")
+                )
+                ("R_ON"
+                    ("value"	"500")
+                    ("pspice_param"	"R_ON")
+                )
+                ("LAMDA"
+                    ("value"	"4.60517")
+                    ("pspice_param"	"LAMDA")
+                )
+                ("OMEGA"
+                    ("value"	"25E-3")
+                    ("pspice_param"	"OMEGA")
+                )
+                ("A_ON"
+                    ("value"	"0.05")
+                    ("pspice_param"	"A_ON")
+                )
+                ("A_OFF"
+                    ("value"	"0.95")
+                    ("pspice_param"	"A_OFF")
+                )
+            )
+        )
+    )
+)

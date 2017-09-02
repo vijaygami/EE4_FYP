@@ -1,0 +1,82 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VPWL_FILE")
+        ("R")
+    )
+    ("instances"
+        ("Vin1"
+            ("device_name"	"VPWL_FILE")
+            ("pspice_path"	"V_Vin1")
+            ("level"	"0")
+            ("model_params"
+                ("FILE"
+                    ("value"	"C:\\Users\\Vijay\\Google Drive\\PSpice\\FYP\\IMLPY\\imply_gate\\v1.txt")
+                    ("pspice_param"	"FILE")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("TSF"
+                    ("value"	"")
+                    ("pspice_param"	"TSF")
+                )
+                ("VSF"
+                    ("value"	"")
+                    ("pspice_param"	"VSF")
+                )
+                ("REPEAT_VALUE"
+                    ("value"	"")
+                    ("pspice_param"	"REPEAT_VALUE")
+                )
+            )
+        )
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+            )
+        )
+    )
+)

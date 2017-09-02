@@ -1,0 +1,4 @@
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL_nand_xor\mrl_nand_xor-pspicefiles\vteam.lib", offset=81, size=1359
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL_nand_xor\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib", offset=42, size=55
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL_nand_xor\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib", offset=98, size=56
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=431, size=56

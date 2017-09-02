@@ -1,0 +1,38 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.SUBCKT TEAM plus minus 
++PARAMS: initial_x = 0.5
++x_off = 1
++x_on = 0
++i_on = -50e-6
++i_off = 50e-6
++k_on = -0.1
++k_off = 0.1
++alpha_on = 2
++alpha_off = 2
++r_off = 10000
++r_on = 100
++lamda = 4.60517
++omega = 100e-3
++a_on = 0.2
++a_off = 0.8
+****** Memristance dependnace on state variable ********
+*Linear*
+.func mem_rel(x)={r_on+((r_off-r_on)*(x-x_on))/(x_off-x_on)}
+********* Functions **********
+.func gfon(x)= {if( (0>x), 0.3*x*x, 0)}
+.func gfoff(x)= {if((0<x),-(0.1*exp(x)-0.1), 0)}
+*State Equation*
+Cstate state 0 300mF IC={initial_x}
+Gon 0 state VALUE={(gfon(I(Visense)))}
+Goff 0 state VALUE={(gfoff(I(Visense)))}
+Vxoff p2 0 {5}
+Vxon p1 0 {0}
+Dxonlim p1 state Dbreak
+Dxofflim state p2 Dbreak
+****** Memristor ******
+Visense n0 minus {0}
+Rseries n0 n1 20
+Ememrist plus n1 VALUE={I(Visense)*mem_rel(V(state,0))}
+.ENDS
+*$

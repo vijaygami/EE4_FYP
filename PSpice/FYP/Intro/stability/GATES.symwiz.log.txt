@@ -1,0 +1,6 @@
+STATUS: PSpice Model Import Wizard for "Capture" (16.6.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MRL\GATES\GATES.DSN
+   INFO: Symbol Name: @GATES.SCHEMATIC1(sch_1):INS26236@VTEAM.VTEAM.Normal(chips)
+STATUS: 0 Error messages, 0 Warning messages

@@ -1,0 +1,65 @@
+(ExpressProject "xor_unbuf"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\xor_unbuf.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\xor_unbuf-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\xor_unbuf-pspicefiles\schematic1\xor_unbuf.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\xor_unbuf-pspicefiles\schematic1\xor_unbuf.sim"
+        (DisplayName "SCHEMATIC1-xor_unbuf")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\xor_unbuf-pspicefiles\xor_unbuf.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\xor_unbuf-pspicefiles\xor_unbuf.lib"))
+      (File ".\xor_unbuf-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\xor_unbuf-pspicefiles\vteam.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_paralel\xor_unbuf.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_paralel\xor_unbuf.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_paralel\xor_unbuf.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 213 0 641"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 25 689 25 474")
+        (Scroll "-61 182")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MRL\XOR_PARALEL\XOR_UNBUF.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Vijay"))

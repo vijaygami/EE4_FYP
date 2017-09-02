@@ -1,0 +1,214 @@
+
+**** 03/23/16 13:03:42 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Initial_investigations"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\initial_investigati
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Initial_investigations.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../initial_investigations-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 80 0 0.1s SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INITIAL_INVESTIGATIONS
+V_V1         N00134 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\v1.txt" 
+V_V2         N00151 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\v2.txt" 
+V_V3         N00577 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\v1.txt" 
+V_V4         N00581 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\v2.txt" 
+X_U1         N00134 N00174 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_U2         N00151 N00174 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_U3         N00597 N00577 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_U4         N00597 N00581 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+
+**** RESUMING Initial_investigations.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Vijay\Google Drive\PSpice\FYP\Initial_Investigations\initial_investigations-pspicefiles\vteam.lib" has changed since index file vteam.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Wed Mar 23 13:01:44 2016 to Wed Mar 23 13:02:35 2016.
+
+INFO(ORPSIM-15422): Making new index file vteam.ind for library file vteam.lib.
+
+Index has 1 entries from 1 file(s).
+*Linear*
+.func mem_rel(x)={r_on+((r_off-r_on)*(x-x_on))/(x_off-x_on)}
+*Exponential*
+*.func mem_rel(x)={r_on*exp((lamda*(x-x_on))/(x_off-x_on))}
+********* Functions **********
+.func expL(x)= {if((x<=10), exp(x), exp(10))}
+.func gfon(x)= {if( (v_on > x),(MIN((1*k_on*(PWR(((x/v_on)-1), alpha_on))), 0.99e10)), 0)}
+.func gfoff(x)= {if((v_off < x),(MIN((1*k_off*(PWR(((x/v_off)-1), alpha_off))), 0.99e10)), 0)}
+.func winon(x)={ expL(-expL(-((x-a_on)/omega ))) }
+.func winoff(x)={ expL(-expL((x-a_off)/omega )) }
+.func poly_iv(x)={(0.25*sgn(x)*PWR(x, 3) + x)*0.76}
+********* State Equation ********
+Cstate state 0 300mF IC={initial_x}
+Gon 0 state VALUE={(gfon(V(plus, minus)))*winon(V(state,0))}
+Goff 0 state VALUE={(gfoff(V(plus, minus)))*winoff(V(state,0))}
+Vxon p1 0 {x_on}
+Vxoff p2 0 {x_off}
+Dxonlim p1 state Dbreak
+Dxofflim state p2 Dbreak
+****** Memristor ******
+Rshunt plus minus 1000000
+Gmemrist plus minus VALUE={(poly_iv(V(plus, minus)))/mem_rel(V(state,0))}
+.END
+$
+ERROR(ORPSIM-16363): Command invalid in subcircuit
+----$
+ERROR(ORPSIM-16499): Missing .ENDS in .SUBCKT
+
+
+WARNING(ORPSIM-15256): <X_U1.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.INITIAL_X> not a subcircuit param
+

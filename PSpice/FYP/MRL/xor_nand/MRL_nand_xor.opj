@@ -1,0 +1,89 @@
+(ExpressProject "MRL_nand_xor"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\mrl_nand_xor.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\mrl_nand_xor-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\mrl_nand_xor-pspicefiles\schematic1\mrl_nand.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\mrl_nand_xor-pspicefiles\schematic1\mrl_nand.sim"
+        (DisplayName "SCHEMATIC1-mrl_nand")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\mrl_nand_xor-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\mrl_nand_xor-pspicefiles\vteam.lib"))
+      (File ".\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Vijay")
+  (PartMRUSelector
+    (AND2
+      (FullPartName "AND2.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "0"))
+    (OR2
+      (FullPartName "OR2.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "0"))
+    (XOR
+      (FullPartName "XOR.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor.dsn"
+         "SCHEMATIC2")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor.dsn"
+         "SCHEMATIC2" "buf"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 427"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 75 1719 75 544")
+        (Scroll "-421 40")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MRL\XOR_NAND\MRL_NAND_XOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1694 50 519")
+        (Scroll "-313 0")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MRL\XOR_NAND\MRL_NAND_XOR.DSN")
+      (Schematic "SCHEMATIC2")
+      (Page "buf"))))

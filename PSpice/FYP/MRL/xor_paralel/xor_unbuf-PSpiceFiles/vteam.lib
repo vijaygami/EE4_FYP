@@ -1,0 +1,47 @@
+* PSpice Model Editor - Version 16.6.0
+
+*$
+* PSpice Model Editor - Version 16.6.0
+.SUBCKT VTEAM p m 
++PARAMS: initial_x = 0.5
++x_off = 1
++x_on = 0
++v_on = -0.8
++v_off = 0.8
++k_on = -0.036363636
++k_off = 0.036363636
++alpha_on = 0.1
++alpha_off = 0.1
++r_off = 50000
++r_on = 500
+* Manually calculate lamda = ln(r_off/r_on) *
++lamda = 4.60517
++omega = 25e-3
++a_on = 0.05
++a_off = 0.95
+****** Memristance dependance on state variable ********
+*Linear*
+.func mem_rel(x)={r_on+((r_off-r_on)*(x-x_on))/(x_off-x_on)}
+*Exponential*
+*.func mem_rel(x)={r_on*exp((lamda*(x-x_on))/(x_off-x_on))}
+********* Functions **********
+.func expL(x)= {if((x<=10), exp(x), exp(10))}
+.func gfon(x)= {if( (v_on > x),(MIN((1*k_on*(PWR(((x/v_on)-1), alpha_on))), 0.99e10)), 0)}
+.func gfoff(x)= {if((v_off < x),(MIN((1*k_off*(PWR(((x/v_off)-1), alpha_off))), 0.99e10)), 0)}
+.func winon(x)={ expL(-expL(-((x-a_on)/omega ))) }
+.func winoff(x)={ expL(-expL((x-a_off)/omega )) }
+.func poly_iv(x)={(0.25*sgn(x)*PWR(x, 3) + x)*0.76}
+********* State Equation ********
+Cstate state 0 330mF IC={initial_x}
+Gon 0 state VALUE={(gfon(V(p, m)))*winon(V(state,0))}
+Goff 0 state VALUE={(gfoff(V(p, m)))*winoff(V(state,0))}
+Vxon p1 0 {x_on}
+Vxoff p2 0 {x_off}
+Dxonlim p1 state Dbreak
+Dxofflim state p2 Dbreak
+****** Memristor ******
+Rshunt p m 10000000
+Gmemrist p m VALUE={(poly_iv(V(p, m)))/mem_rel(V(state,0))}
+.ENDS
+*
+*$

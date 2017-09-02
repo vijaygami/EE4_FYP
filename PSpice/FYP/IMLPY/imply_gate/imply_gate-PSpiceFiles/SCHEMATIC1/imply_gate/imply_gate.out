@@ -1,0 +1,94 @@
+
+**** 06/11/16 09:48:10 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-pspicefiles\schematic1\imp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "imply_gate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../imply_gate-pspicefiles/imply_gate.lib" 
+.LIB "../../../imply_gate-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 320 0 20m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source IMPLY_GATE
+V_Vin1         SIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\v1.txt" 
+X_S2    SIN1 0 SIN1 VIN1 SCHEMATIC1_S2 
+R_R1         VIN1 0  1k TC=0,0 
+
+.subckt SCHEMATIC1_S2 1 2 3 4  
+S_S2         3 4 1 2 Sbreak
+RS_S2         1 2 1G
+.ends SCHEMATIC1_S2
+
+**** RESUMING imply_gate.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-pspicefiles\imply_gate.lib" has changed since index file imply_gate.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Sat Jun 11 09:44:15 2016 to Sat Jun 11 09:48:05 2016.
+
+INFO(ORPSIM-15422): Making new index file imply_gate.ind for library file imply_gate.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 06/11/16 09:48:10 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-pspicefiles\schematic1\imp
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Sbreak          
+         RON    1.000000E-03 
+        ROFF    1.000000E+12 
+         VON    4.9          
+        VOFF    5            
+
+
+
+          JOB CONCLUDED
+
+**** 06/11/16 09:48:10 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-pspicefiles\schematic1\imp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       10.28
+  Total job time (using Solver 1)   =         .08
+

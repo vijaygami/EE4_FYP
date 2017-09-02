@@ -1,0 +1,16 @@
+.ALIASES
+V_V1            V1(+=VDD -=0 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS98@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=VIN1 -=0 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS260@SOURCE.VPWL_FILE.Normal(chips)
+V_V3            V3(+=VIN2 -=0 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS276@SOURCE.VPWL_FILE.Normal(chips)
+M_M14           M14(d=VOUT g=VIN1 s=VINT1 b=VDD ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS28421@BREAKOUT.MbreakP.Normal(chips)
+M_M15           M15(d=VOUT g=VIN2 s=VINT1 b=VDD ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS28497@BREAKOUT.MbreakP.Normal(chips)
+M_M17           M17(d=VOUT g=VIN1 s=N288640 b=0 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS28850@BREAKOUT.MbreakN.Normal(chips)
+M_T7            T7(d=N288640 g=VIN2 s=0 s=0 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS28884@BREAKOUT.MbreakN3.Normal(chips)
+X_M29           M29(P=VINT1 M=VIN2 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS30082@GATES.VTEAM_2.Normal(chips)
+X_M30           M30(P=VINT1 M=VIN1 ) CN @MRL_NOVEL.SCHEMATIC1(sch_1):INS30300@GATES.VTEAM_2.Normal(chips)
+_    _(Vdd=VDD)
+_    _(Vin1=VIN1)
+_    _(Vin2=VIN2)
+_    _(Vint1=VINT1)
+_    _(Vout=VOUT)
+.ENDALIASES

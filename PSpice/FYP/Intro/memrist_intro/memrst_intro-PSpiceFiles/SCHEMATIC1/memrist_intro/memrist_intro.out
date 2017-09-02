@@ -1,0 +1,133 @@
+
+**** 05/26/16 10:19:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-memrist_intro"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\schema
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "memrist_intro.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../memrst_intro-pspicefiles/team.lib" 
+.LIB "../../../memrst_intro-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 0.005m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MEMRST_INTRO
+X_U1         N00134 0 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+V_V2         N00134 0  
++SIN 0 2 0.05 0 0 0
+X_U2         N00820 0 TEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0 I_ON=-50E-6
++  I_OFF=50E-6 K_ON=-0.1 K_OFF=0.1 ALPHA_ON=2 ALPHA_OFF=2 R_OFF=10000 R_ON=100
++  LAMDA=4.60517 OMEGA=100E-3 A_ON=0.2 A_OFF=0.8
+I_I1         N00820 0 DC 0Adc AC 0Aac
++SIN 0 1.55 1 0 0 0
+R_R1         N048513 0  1k TC=0,0 
+X_S1    N04833 0 N04833 N048513 SCHEMATIC1_S1 
+V_V6         N04833 0  
++PULSE 6 12 1m 10p 10p 1m 2.01m
+
+.subckt SCHEMATIC1_S1 1 2 3 4  
+S_S1         3 4 1 2 Sbreak
+RS_S1         1 2 1G
+.ends SCHEMATIC1_S1
+
+**** RESUMING memrist_intro.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\team.lib" has changed since index file team.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Fri Mar 25 14:47:10 2016 to Fri Mar 25 15:47:10 2016.
+
+INFO(ORPSIM-15422): Making new index file team.ind for library file team.lib.
+
+Index has 1 entries from 1 file(s).
+
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\vteam.lib" has changed since index file vteam.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Fri Mar 25 09:54:31 2016 to Fri Mar 25 10:54:31 2016.
+
+INFO(ORPSIM-15422): Making new index file vteam.ind for library file vteam.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 05/26/16 10:19:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-memrist_intro"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\schema
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+**** 05/26/16 10:19:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-memrist_intro"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\schema
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Sbreak          
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+
+          JOB CONCLUDED
+
+**** 05/26/16 10:19:23 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-memrist_intro"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\schema
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.06
+  Total job time (using Solver 1)   =       17.60
+

@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_novel_2\mrl_novel-pspicefiles\schematic1\mrl_novel.sim ] 
+
+** Creating circuit file "mrl_novel.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_novel-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_novel-pspicefiles/mrl_novel.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 79.99 0 10m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

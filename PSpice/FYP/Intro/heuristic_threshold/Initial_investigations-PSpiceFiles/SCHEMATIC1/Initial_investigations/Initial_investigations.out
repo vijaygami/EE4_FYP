@@ -1,0 +1,163 @@
+
+**** 06/12/16 21:56:01 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Initial_investigations"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investig
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Initial_investigations.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../initial_investigations-pspicefiles/vteam.lib" 
+.LIB "../../../initial_investigations-pspicefiles/team.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1010 1000 2m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INITIAL_INVESTIGATIONS
+V_V1         N05252 0  
++SIN 0 2 0.1 0 0 0
+V_V2         N05231 0  
++SIN 0 2 0.1 0 0 0
+X_U1         N05252 0 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_U2         N05231 0 TEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0 I_ON=-50E-6
++  I_OFF=50E-6 K_ON=-0.1 K_OFF=0.1 ALPHA_ON=2 ALPHA_OFF=2 R_OFF=10000 R_ON=100
++  LAMDA=4.60517 OMEGA=100E-3 A_ON=0.2 A_OFF=0.8
+X_U4         N07052 0 TEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0 I_ON=-50E-6
++  I_OFF=50E-6 K_ON=-0.1 K_OFF=0.1 ALPHA_ON=2 ALPHA_OFF=2 R_OFF=10000 R_ON=100
++  LAMDA=4.60517 OMEGA=100E-3 A_ON=0.2 A_OFF=0.8
+X_U3         N09481 0 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+I_I1         N07052 0 DC 0Adc AC 0Aac
++SIN 0 200u 0.1 0 0 0
+I_I2         N09481 0 DC 0Adc AC 0Aac
++SIN 0 120u 0.0001 0 0 0
+R_R1         0 N09481  1000k TC=0,0 
+
+**** RESUMING Initial_investigations.cir ****
+.END
+
+
+WARNING(ORPSIM-15256): <X_U1.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U1.INITIAL_X> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U2.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U4.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.A_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.A_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.OMEGA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.LAMDA> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.R_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.R_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.ALPHA_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.ALPHA_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.K_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.K_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.V_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.V_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.X_ON> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.X_OFF> not a subcircuit param
+
+WARNING(ORPSIM-15256): <X_U3.INITIAL_X> not a subcircuit param
+
+**** 06/12/16 21:56:01 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Initial_investigations"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investig
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+
+          JOB CONCLUDED
+
+**** 06/12/16 21:56:01 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Initial_investigations"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investig
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       18.64
+  Total job time (using Solver 1)   =      109.62
+

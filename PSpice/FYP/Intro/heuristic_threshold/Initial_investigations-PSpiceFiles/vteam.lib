@@ -1,0 +1,22 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+* PSpice Model Editor - Version 16.6.0
+.SUBCKT VTEAM plus minus 
+
+.func mem_rel(x)={10000+((25000-10000)*x)}
+.func gfon(x)= {if(   (-0.8 > x)  , -MIN(PWR((x+0.8), 1), 0.99e10)   , 0  )}
+.func gfoff(x)= {if(   (0.8 < x)  ,  MIN(PWR((x-0.8), 1), 0.99e10)   , 0  )}
+
+Cstate state 0 330mF IC={0.5}
+Gon 0 state VALUE={gfon(V(plus, minus))}
+Goff 0 state VALUE={gfoff(V(plus, minus))}
+Vxon p1 0 {0}
+Vxoff p2 0 {1}
+Dxonlim p1 state Dbreak
+Dxofflim state p2 Dbreak
+
+
+Gmemrist plus minus VALUE={V(plus, minus)/mem_rel(V(state,0))}
+.ENDS
+
+*$

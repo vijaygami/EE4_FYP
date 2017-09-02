@@ -1,0 +1,4 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.model Sbreak VSWITCH Roff=1e12 Ron=1e-3 Voff=5 Von=4.9
+*$

@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (16.6.0.d001)
+STATUS:  
+STATUS: Translator started at Wednesday, March 23, 2016 00:23:32
+STATUS: C:\OrCAD\OrCAD_16.6_Lite\tools\Capture\sch2cap -f "C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-PSpiceFiles\vteam.lib" -o "C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-PSpiceFiles\vteam.olb" -i C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini
+INFO(ORSCH-1029): Using existing library 'C:\OrCAD\OrCAD_16.6_Lite\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1029): Using existing library 'C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-PSpiceFiles\vteam.olb'.
+STATUS: Translator stopped at Wednesday, March 23, 2016 00:23:32
+STATUS: 0 Error messages, 0 Warning messages

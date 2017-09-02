@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-MRL_nand_xor"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL_nand_xor\MRL_nand_xor-PSpiceFiles\SCHEMATIC1\MRL_nand_xor.sim ] 
+
+** Creating circuit file "MRL_nand_xor.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_nand_xor-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_nand_xor-pspicefiles/mrl_nand_xor.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 78.99s 0 10m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

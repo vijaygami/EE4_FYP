@@ -1,0 +1,86 @@
+
+**** 06/11/16 09:54:34 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\Driver\imply_gate-pspicefiles\schematic1\imply_g
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "imply_gate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../imply_gate-pspicefiles/imply_gate.lib" 
+.LIB "../../../imply_gate-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5 0 1m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source IMPLY_GATE
+V_Vin1         SIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\Driver\v1.txt" 
+R_R_test1         0 VIN1  50K TC=0,0 
+X_S2    SIN1 0 SIN1 VIN1 SCHEMATIC1_S2 
+
+.subckt SCHEMATIC1_S2 1 2 3 4  
+S_S2         3 4 1 2 Sbreak
+RS_S2         1 2 1G
+.ends SCHEMATIC1_S2
+
+**** RESUMING imply_gate.cir ****
+.END
+
+**** 06/11/16 09:54:34 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\Driver\imply_gate-pspicefiles\schematic1\imply_g
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Sbreak          
+         RON    1.000000E-03 
+        ROFF    1.000000E+12 
+         VON    4.9          
+        VOFF    5            
+
+
+
+          JOB CONCLUDED
+
+**** 06/11/16 09:54:34 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-imply_gate"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\Driver\imply_gate-pspicefiles\schematic1\imply_g
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        6.15
+  Total job time (using Solver 1)   =         .05
+

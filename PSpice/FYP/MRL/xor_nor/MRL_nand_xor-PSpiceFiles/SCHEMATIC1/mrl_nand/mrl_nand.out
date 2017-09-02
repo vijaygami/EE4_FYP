@@ -1,0 +1,162 @@
+
+**** 06/09/16 01:37:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mrl_nand.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_nand_xor-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_nand_xor-pspicefiles/mrl_nand_xor.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 79.99 0 20m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MRL_NAND_XOR
+V_Vin2         VIN2 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\v2.txt" 
+V_V1         VDD 0 5Vdc
+V_Vin1         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\v1.txt" 
+M_T6         VOUT N32120 0 0 Mbreakn           
+M_T2         VINT1 N31968 VDD VDD Mbreakp           
+M_T1         VINT1 N31968 0 0 Mbreakn           
+M_T3         VINT2 N32032 VDD VDD Mbreakp           
+M_T5         VOUT N32120 VDD VDD Mbreakp           
+M_T4         VINT2 N32032 0 0 Mbreakn           
+M_T7         N33702 VIN2 VDD VDD Mbreakp           
+M_T8         N33702 VIN2 0 0 Mbreakn           
+M_T10         N33706 VIN1 0 0 Mbreakn           
+M_T9         N33706 VIN1 VDD VDD Mbreakp           
+X_M29         N31968 N33706 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M30         N31968 N33702 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M31         N32032 VIN1 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M32         N32032 VIN2 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M33         N32120 VINT2 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M34         N32120 VINT1 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+
+**** RESUMING mrl_nand.cir ****
+.END
+
+**** 06/09/16 01:37:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+**** 06/09/16 01:37:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  250.000000E-09  250.000000E-09 
+           W    2.500000E-06    6.300000E-06 
+         VTO    1.5            -1.5          
+          KP   50.000000E-06   20.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+Reducing minimum delta to make the circuit converge.
+
+
+          JOB CONCLUDED
+
+**** 06/09/16 01:37:28 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.03
+  Total job time (using Solver 1)   =        1.97
+

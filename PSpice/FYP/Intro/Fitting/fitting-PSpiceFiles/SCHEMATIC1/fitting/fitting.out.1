@@ -1,0 +1,74 @@
+
+**** 03/23/16 00:25:20 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-fitting"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-pspicefiles\schematic1\fitting.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "fitting.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../fitting-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 7.95 0 10m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FITTING
+V_V1         N00117 0  
++PULSE 2 -2 0 3.975 3.975 0 7.95
+X_U1         N00117 0 VTEAM PARAMS:  INITIAL_X=0.75 X_OFF=1 X_ON=0 V_ON=-1
++  V_OFF=1 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+
+**** RESUMING fitting.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Vijay\Google Drive\PSpice\FYP\Fitting\fitting-pspicefiles\vteam.lib" has changed since index file vteam.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Wed Mar 23 00:00:22 2016 to Wed Mar 23 00:25:16 2016.
+
+INFO(ORPSIM-15422): Making new index file vteam.ind for library file vteam.lib.
+
+Index has 1 entries from 1 file(s).
+
+
+**** EXPANSION OF SUBCIRCUIT X_U1 ****
+.func mem_rel(x) {r_on+((r_off-r_on)*(x-x_on))/(x_off-x_on)}
+.func expL(x) {if((x<=10), exp(x), exp(10))}
+.func gfon(x) {if( (v_on > x),(MIN((1*k_on*(PWR(((x/v_on)-1), alpha_on))),
++  0.99e10)), 0)}
+.func gfoff(x) {if((v_off < x),(MIN((1*k_off*(PWR(((x/v_off)-1),alpha_off))),
++  0.99e10)), 0)}
+
+WARNING(ORPSIM-15216): Undefined parameter expL used in expression
+.func winon(x) { expL(-expL-((x-a_on)/omega )) }
+------------------------------------------------$
+ERROR(ORPSIM-16318): Missing or invalid expression
+.func winoff(x) { expL(-expL((x-a_off)/omega )) }
+.func poly_iv(x) {(-0.064*sgn(x)*PWR(x, 5)+0.646*sgn(x)*PWR(x, 3) -0.017*PWR(
++ x, 4) + x)*0.76}
+X_U1.Cstate X_U1.state 0 300mF IC {initial_x}
+
+WARNING(ORPSIM-15213): Too many arguments to function X_U1.winon.
+X_U1.Gon 0 X_U1.state VALUE {(gfon(V(0#, 1#)))*winon(V(state,0))}
+----------------------------$
+ERROR(ORPSIM-16318): Missing or invalid expression
+

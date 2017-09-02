@@ -1,0 +1,6 @@
+* source MRL_NOVEL
+V_Vdd         VDD 0 5Vdc
+V_Vin1         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\test\v1.txt" 
+M_T4         N01597 VIN1 VDD VDD Mbreakp           
+M_M3         N01597 VIN1 VIN1 0 Mbreakn           

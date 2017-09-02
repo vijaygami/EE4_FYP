@@ -1,0 +1,4 @@
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_buf\gates-pspicefiles\gates.lib", offset=42, size=55
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_buf\gates-pspicefiles\gates.lib", offset=98, size=55
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_buf\gates-pspicefiles\vteam.lib", offset=42, size=1289
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=431, size=56

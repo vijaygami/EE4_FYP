@@ -1,0 +1,567 @@
+
+**** 05/26/16 15:26:08 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mrl_nand.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_nand_xor-pspicefiles/vteam.lib" 
+.LIB "../../../mrl_nand_xor-pspicefiles/mrl_nand_xor.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 79.99s 0 10m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(*) I(*) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MRL_NAND_XOR
+V_Vin2         VIN2 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\v2.txt" 
+V_V1         VDD 0 5Vdc
+V_Vin1         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\v1.txt" 
+M_T6         N320962 N32120 0 0 Mbreakn           
+M_T2         N32254 N31968 VDD VDD Mbreakp           
+X_M1         N31968 N33702 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+M_T1         N32254 N31968 0 0 Mbreakn           
+X_M5         N32120 N32254 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M6         N32120 N32262 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+X_M3         N32032 VIN1 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+M_T3         N32262 N32032 VDD VDD Mbreakp           
+X_M4         N32032 VIN2 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0 V_ON=-0.8
++  V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1 ALPHA_OFF=0.1
++  R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05 A_OFF=0.95
+X_M2         N31968 N33706 VTEAM PARAMS:  INITIAL_X=0.5 X_OFF=1 X_ON=0
++  V_ON=-0.8 V_OFF=0.8 K_ON=-0.036363636 K_OFF=0.036363636 ALPHA_ON=0.1
++  ALPHA_OFF=0.1 R_OFF=50000 R_ON=500 LAMDA=4.60517 OMEGA=25E-3 A_ON=0.05
++  A_OFF=0.95
+M_T5         N320962 N32120 VDD VDD Mbreakp           
+M_T4         N32262 N32032 0 0 Mbreakn           
+M_T7         N33702 VIN2 VDD VDD Mbreakp           
+M_T8         N33702 VIN2 0 0 Mbreakn           
+M_T10         N33706 VIN1 0 0 Mbreakn           
+M_T9         N33706 VIN1 VDD VDD Mbreakp           
+
+**** RESUMING mrl_nand.cir ****
+.END
+
+**** 05/26/16 15:26:08 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+           N  100.000000E-06 
+          RS  100.000000E-06 
+         CJO  100.000000E-15 
+
+
+**** 05/26/16 15:26:08 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  250.000000E-09  250.000000E-09 
+           W    2.500000E-06    6.300000E-06 
+         VTO    1.5            -1.5          
+          KP   50.000000E-06   20.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  45.12.
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N32120)                 =     1.778V  \     1.785V
+    V(N32254)                 =     3.921V  \     3.929V
+    V(N32262)                 =     1.599V  \     1.607V
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =  -775.11uA  \  -776.22uA
+    I(X_M5.Vxoff)             =   113.69fA  \    2.501pA
+    I(X_M6.Vxoff)             =  -936.14fA  \   946.80fA
+    I(X_M2.Vxon)              =   312.25fA  \   -1.544pA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120)    1.7777 (N32254)    3.9208 (N32262)    1.5993     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)    4.9777                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 79.99
+**** Param: TMAX = 0.01
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 1
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+Convergence problem in transient analysis at Time =  45.12
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N32120)                 =     1.778V  \     1.785V
+    V(N32254)                 =     3.921V  \     3.929V
+    V(N32262)                 =     1.599V  \     1.607V
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =  -775.11uA  \  -776.22uA
+    I(X_M5.Vxoff)             =   170.53fA  \    2.501pA
+    I(X_M6.Vxoff)             =  -990.32fA  \   946.80fA
+    I(X_M2.Vxon)              =   364.29fA  \   -1.544pA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120)    1.7777 (N32254)    3.9208 (N32262)    1.5993     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)    4.9777                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+Resuming Simulation with the following settings
+ITL4 = 354
+ABSTOL = 1.41e-009
+
+Convergence problem in transient analysis at Time =  45.12
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N32120)                 =     1.778V  \     1.785V
+    V(N32254)                 =     3.921V  \     3.929V
+    V(N32262)                 =     1.599V  \     1.607V
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =  -775.11uA  \  -776.22uA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120)    1.7777 (N32254)    3.9208 (N32262)    1.5993     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)    4.9777                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 2e-006
+
+Convergence problem in transient analysis at Time =  45.12
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N32120)                 =     1.778V  \     1.785V
+    V(N32254)                 =     3.921V  \     3.929V
+    V(N32262)                 =     1.599V  \     1.607V
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120)    1.7777 (N32254)    3.9208 (N32262)    1.5993     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)    4.9777                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+Resuming Simulation with the following settings
+RELTOL = 0.0086
+
+Convergence problem in transient analysis at Time =  45.12
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N320962)                =     33.55V  \     4.976V
+    V(N32120)                 =   -159.72V  \     1.785V
+    V(N32254)                 =   -157.57V  \     3.929V
+    V(N32262)                 =   -159.89V  \     1.607V
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =    21.65mA  \  -776.22uA
+
+  These devices failed to converge:
+    M_T6      M_T1      M_T5      M_T4      
+Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120) -159.7200 (N32254) -157.5700 (N32262) -159.8900     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)   33.5540                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+Resuming Simulation with the following settings
+RELTOL = 0.05
+ABSTOL = 0.001
+
+Convergence problem in transient analysis at Time =  45.12
+         Time step =  0    , minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N320962)                =     5.260V  \     4.976V
+    V(N32120)                 =  -193.76mV  \     1.785V
+    V(N32254)                 =    61.34mV  \     3.929V
+    V(N32262)                 =   -57.01mV  \     1.607V
+
+  These devices failed to converge:
+    X_M5.Gon  
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    5.0000  ( VIN1)    0.0000  ( VIN2)    5.0000  (N31968)    2.4284     
+
+(N32032)    2.5756 (N32120)    -.1938 (N32254)     .0613 (N32262)    -.0570     
+
+(N33702)     .1466 (N33706)    4.8546 (N320962)    5.2600                       
+
+(X_M1.p1)    0.0000                   (X_M1.p2)    1.0000                       
+
+(X_M2.p1)    0.0000                   (X_M2.p2)    1.0000                       
+
+(X_M3.p1)    0.0000                   (X_M3.p2)    1.0000                       
+
+(X_M4.p1)    0.0000                   (X_M4.p2)    1.0000                       
+
+(X_M5.p1)    0.0000                   (X_M5.p2)    1.0000                       
+
+(X_M6.p1)    0.0000                   (X_M6.p2)    1.0000                       
+
+(X_M1.state)     .3139                (X_M2.state)     .3601                    
+
+(X_M3.state)     .4126                (X_M4.state)     .3592                    
+
+(X_M5.state)     .9752                (X_M6.state)     .0273                
+
+Resuming could not converge the circuit, restarting it now
+
+  These voltages failed to converge:
+
+    V(N320962)                =     5.047V  \     5.260V
+    V(N32120)                 =   395.77mV  \  -193.76mV
+    V(N32254)                 =   655.21mV  \    61.34mV
+    V(N31968)                 =     2.428V  \     2.428V
+    V(N32262)                 =   386.54mV  \   -57.01mV
+    V(N32032)                 =     2.576V  \     2.576V
+    V(N33702)                 =   146.58mV  \   146.58mV
+    V(N33706)                 =     4.855V  \     4.855V
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =  -755.85uA  \  -494.07uA
+    I(V_Vin1)                 =   251.30uA  \   251.30uA
+    I(X_M1.Vxon)              =    17.35fA  \   346.95fA
+    I(X_M1.Vxoff)             =  -312.64fA  \  -980.55fA
+    I(X_M5.Vxon)              =   485.72fA  \    1.457pA
+    I(X_M5.Vxoff)             =    56.84fA  \   170.53fA
+    I(X_M6.Vxon)              =    10.84fA  \    36.86fA
+    I(X_M6.Vxoff)             =   -19.54fA  \  -990.32fA
+    I(X_M3.Vxon)              =  -451.03fA  \   -34.69fA
+    I(X_M3.Vxoff)             =  -355.27fA  \  -923.71fA
+    I(X_M4.Vxon)              =   173.47fA  \   537.76fA
+    I(X_M4.Vxoff)             =   312.64fA  \  -326.85fA
+    I(X_M2.Vxon)              =    34.69fA  \   364.29fA
+    I(X_M2.Vxoff)             =   156.32fA  \  -468.96fA
+
+  These devices failed to converge:
+    X_M1.Dxonlim X_M5.Dxonlim X_M5.Dxofflim X_M6.Dxonlim X_M6.Dxofflim 
+    X_M3.Dxonlim X_M3.Dxofflim X_M4.Dxonlim X_M2.Dxonlim X_M1.Gon  X_M1.Goff 
+    X_M1.Gmemrist X_M5.Gon  X_M5.Goff X_M5.Gmemrist X_M6.Gon  X_M6.Goff 
+    X_M6.Gmemrist X_M3.Gon  X_M3.Goff X_M3.Gmemrist X_M4.Gon  X_M4.Goff 
+    X_M4.Gmemrist X_M2.Gon  X_M2.Goff X_M2.Gmemrist M_T1      M_T5      
+    M_T4      M_T8      M_T9      
+
+INTERNAL ERROR -- Divide by Zero, Divide
+
+ABORTING SIMULATION
+**** 05/26/16 15:26:08 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_nand"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nor\mrl_nand_xor-pspicefiles\schematic1\mrl_nand
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          12
+  External (NCNODS)                 =          30
+  Total (NUMNOD)                    =          42
+
+Total device count (NUMEL)          =          67
+  Capacitors (C)                    =           6
+  Diodes (D)                        =          12
+  VCCS (G)                          =          18
+  MosFETs (M)                       =          10
+  Resistors (R)                     =           6
+  Voltage Sources (V)               =          15
+
+Number of subcircuits (X)           =           6
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          57
+  Initial no. elements (NTTAR)      =         185
+  No. elements w/ fillin (NTTBR)    =         191
+  No. fillins (IFILL)               =           6
+  No. overflows (NTTOV)             =         306
+  No. LU operations (IOPS)          =         418
+  Percent sparsity (PERSPA)         =      94.121
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =        4697
+  No. rejected time points (NUMRTP) =          59
+  No. iterations (NUMNIT)           =       16700
+
+Size of Probe file                  =     8591384
+Load Threads                        =           4
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        2.17
+  Matrix solution                   =        0.00               2
+  Readin                            =         .02
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        2.04
+  License check-out time            =        2.04
+  Total job time (using Solver 1)   =        7.57
+

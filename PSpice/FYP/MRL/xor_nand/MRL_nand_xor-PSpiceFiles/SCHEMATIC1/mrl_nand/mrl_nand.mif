@@ -1,0 +1,11 @@
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor-pspicefiles\vteam.lib", offset=42, size=1282
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib", offset=42, size=55
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\xor_nand\mrl_nand_xor-pspicefiles\mrl_nand_xor.lib", offset=98, size=55
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_prim.lib, offset=19783, size=375
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=431, size=56
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_prim.lib, offset=41531, size=25
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_prim.lib, offset=41633, size=26
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_io.lib, offset=13230, size=190
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_io.lib, offset=7572, size=259
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_io.lib, offset=38483, size=304
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\dig_io.lib, offset=12686, size=225

@@ -1,0 +1,52 @@
+
+**** 06/18/16 16:35:36 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mrl_novel"  [ C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\test\mrl_novel-pspicefiles\schematic1\mrl_novel.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mrl_novel.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../mrl_novel-pspicefiles/mrl_novel.lib" 
+.LIB "../../../mrl_novel-pspicefiles/vteam.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vijay\Documents\PSpice\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.06m 0 1n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MRL_NOVEL
+V_Vdd         VDD 0 5Vdc
+V_Vin1         VIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\MRL\test\v1.txt" 
+M_T4         N01597 VIN1 VDD VDD Mbreakp           
+M_M3         N01597 VIN1 VIN1 0 Mbreakn           
+M_M34         N654492 N65581 N65690 N65588 Mbreakn           
+M_M35         N654492 VIN2 VDD VDD Mbreakp           
+V_V1         N65581 N65588 0Vdc
+V_V2         N65690 N65588 5V
+
+**** RESUMING mrl_novel.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VIN2.
+
+ERROR(ORPSIM-15142): Node VIN2 is floating
+

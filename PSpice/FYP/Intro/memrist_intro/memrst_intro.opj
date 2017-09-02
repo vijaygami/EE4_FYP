@@ -1,0 +1,95 @@
+(ExpressProject "memrst_intro"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\memrst_intro.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\memrst_intro-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\memrst_intro-pspicefiles\schematic1\memrist_intro.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\memrst_intro-pspicefiles\schematic1\memrist_intro.sim"
+        (DisplayName "SCHEMATIC1-memrist_intro")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\memrst_intro-pspicefiles\team.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\memrst_intro-pspicefiles\team.lib"))
+      (File ".\memrst_intro-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\memrst_intro-pspicefiles\vteam.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TEAM
+      (FullPartName "TEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MEMRIST_INTRO\MEMRST_INTRO-PSPICEFILES\TEAM.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VTEAM
+      (FullPartName "VTEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MEMRIST_INTRO\MEMRST_INTRO-PSPICEFILES\VTEAM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Vijay\Google Drive\PSpice\FYP\memrist_intro\memrst_intro-PSpiceFiles")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 427"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 693 25 448")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\INTRO\MEMRIST_INTRO\MEMRST_INTRO.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Vijay"))

@@ -1,0 +1,43 @@
+.SUBCKT TEAM plus minus 
++PARAMS: initial_x = 0.5
++x_off = 1
++x_on = 0
++i_on = -50e-6
++i_off = 50e-6
++k_on = -0.1
++k_off = 0.1
++alpha_on = 2
++alpha_off = 2
++r_off = 10000
++r_on = 100
++lamda = 4.60517
++omega = 100e-3
++a_on = 0.2
++a_off = 0.8
+****** Memristance dependnace on state variable ********
+*Linear*
+*.func mem_rel(x)={r_on+((r_off-r_on)*(x-x_on))/(x_off-x_on)}
+*Exponential*
+.func mem_rel(x)={r_on*exp((lamda*(x-x_on))/(x_off-x_on))}
+********* Functions **********
+.func expL(x)= {if((x<=10), exp(x), exp(10))}
+.func gfon(x)= {if( (i_on > x), (MIN((1*(k_on)* (PWR((( x/i_on)-1), alpha_on ))), 0.99e10)), 0)}
+.func gfoff(x)= {if((i_off < x),(MIN((1*(k_off)*(PWR(((x/i_off)-1), alpha_off))), 0.99e10)), 0)}
+*.func winon(x)={if((x>x_on),1,0)}
+*.func winoff(x)={if((x<x_off),1,0)}
+.func winon(x)={ expL(-expL( -(x-a_on)/omega )) }
+.func winoff(x)={ expL(-expL(  (x-a_off)/omega )) }
+*State Equation*
+Cstate state 0 3nF IC={initial_x}
+Gon 0 state VALUE={(gfon(I(Visense)))*winon(V(state,0))}
+Goff 0 state VALUE={(gfoff(I(Visense)))*winoff(V(state,0))}
+Vxoff p2 0 {x_off}
+Vxon p1 0 {x_on}
+Dxonlim p1 state Dbreak
+Dxofflim state p2 Dbreak
+****** Memristor ******
+Visense n0 minus {0}
+Rseries n0 n1 20
+Ememrist plus n1 VALUE={I(Visense)*mem_rel(V(state,0))}
+.ENDS
+

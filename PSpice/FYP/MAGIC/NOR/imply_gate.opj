@@ -1,0 +1,81 @@
+(ExpressProject "imply_gate"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\imply_gate.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\imply_gate-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\imply_gate-pspicefiles\schematic1\imply_gate.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\imply_gate-pspicefiles\schematic1\imply_gate.sim"
+        (DisplayName "SCHEMATIC1-imply_gate")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\imply_gate-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\imply_gate-pspicefiles\vteam.lib"))
+      (File ".\imply_gate-pspicefiles\imply_gate.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\imply_gate-pspicefiles\imply_gate.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VTEAM
+      (FullPartName "VTEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\IMLPY\IMPLY_GATE\IMPLY_GATE-PSPICEFILES\VTEAM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\imply_gate\imply_gate-PSpiceFiles")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MAGIC\NOR\imply_gate.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\MAGIC\NOR\imply_gate.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 427"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 25 1665 25 490")
+        (Scroll "119 514")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\MAGIC\NOR\IMPLY_GATE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Vijay"))

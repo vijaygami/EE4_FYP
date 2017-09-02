@@ -1,0 +1,7 @@
+.ALIASES
+V_Vin1          Vin1(+=V_IN -=0 ) CN @GATES.SCHEMATIC1(sch_1):INS23168@SOURCE.VPWL_FILE.Normal(chips)
+I_I_in          I_in(+=N62648 -=0 ) CN @GATES.SCHEMATIC1(sch_1):INS62775@SOURCE.IPWL_FILE.Normal(chips)
+X_M1            M1(P=V_IN M=0 ) CN @GATES.SCHEMATIC1(sch_1):INS63247@GATES.VTEAM_2.Normal(chips)
+R_R1            R1(1=N62648 2=0 ) CN @GATES.SCHEMATIC1(sch_1):INS63294@ANALOG.R.Normal(chips)
+_    _(V_in=V_IN)
+.ENDALIASES

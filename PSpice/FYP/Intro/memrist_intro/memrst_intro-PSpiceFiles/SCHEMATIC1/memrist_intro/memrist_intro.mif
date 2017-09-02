@@ -1,0 +1,4 @@
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\team.lib", offset=42, size=825
+ lib="C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\memrist_intro\memrst_intro-pspicefiles\vteam.lib", offset=81, size=1139
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=431, size=56
+ lib=C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice\Library\breakout.lib, offset=3176, size=60

@@ -1,0 +1,34 @@
+.SUBCKT modified_pickett plus minus
+.PARAM:
++phio=0.95 Lm=0.0998 w1=0.1261 foff=3.5e–6
++ioff=115e–6 aoff=1.2 ion=8.9e–6 aon=1.8 Th_on=0.0074
++koff1=1 koff2=0.5 kon1=1 kon2=1 b=600e–6 wc=95e–3
++fon=2000e–6
+
+G1 plus internal value={sgn(V(xp))*(1/V(dw))^2*0.0617*(V(phiI)*exp(–V(B)*V(sr))–(V(phiI)+abs(V(xp)))*exp(–V(B)*V(sr2)))}
+Rs internal minus 215
+Esr sr 0 value={sqrt(V(phiI))}
+Esr2 sr2 0 value={sqrt(V(phiI)+abs(V(xp)))}
+Eg xp 0 value={V(plus)–V(internal)}
+Elamda Lmda 0 value={Lm/V(w)}
+Ew2 w2 0 value={w1+V(w)–(0.9183/(2.85+4*V(Lmda)–2*abs(V(xp))))}
+EDw dw 0 value={V(w2)–w1}
+EB B 0 value={10.246*V(dw)}
+ER R 0 value={(V(w2)/w1)*(V(w)–w1)/(V(w)–V(w2))}
+EphiI phiI 0 value={phio–abs(V(xp))*((w1+V(w2))/(2*V(w)))–1.15*V(Lmda)*V(w)*log(V(R))/V(dw)}
+********** Edited Terms 1 *************
+C1 w1 0 1e–9 IC=1.2
+R w1 0 1e8MEG
+********** Added Terms 1 *************
+Ew w 0 value= {MIN (MAX (V(w1), 1), 2)}
+Rw w 0 1T
+************************************
+Ec c 0 value={abs(V(internal)–V(minus))/215}
+Emon1 mon1 0 value={((V(w)–aoff)/wc)–(V(c)/b)}
+Emon2 mon2 0 value={(aon–V(w))/wc–(V(c)/b)}
+************* Edited Terms 2 **********
+Goff 0 w1 value={foff*sinh(stp(V(xp))*V(c)/ioff)*exp(–koff1*exp(koff2*V(mon1))–V(w)/wc)}
+Gon w1 0 value={fon*sinh(stp(–V(xp))*V(c)/ion)*(exp(–kon1*exp(kon2*V(mon2))–V(w)/wc))}
+***********************************
+.ENDS
+************************************

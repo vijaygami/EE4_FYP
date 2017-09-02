@@ -1,0 +1,39 @@
+.SUBCKT VTEAM plus minus 
++PARAMS: initial_x=0.5
++v_off=1 
++v_on=-1 
++x_off=1
++x_on=0 
++k_off=3 
++k_on=-3
++a_off=2 
++a_on=2 
++R_off=100000 
++R_on=1000
++lamda_y=4.60517
+
+.func Gfon(x)= {if((v_on>x), (k_on)*PWR(((x/v_on)-1), a_on), 0)}
+.func Gfoff(x)= {if((v_off<x), (k_off)*PWR(((x/v_off)-1), a_off), 0)}
+.func Winon(x)={if((x>x_on),1,1e-10)}
+.func Winoff(x)={if((x<x_off),1,1e-10)}
+
+Cx state 0 1F IC={initial_x}
+Gon 0 state VALUE={(Gfon(V(plus,minus)))*Winon(V(state,0))}
+Goff 0 state VALUE={(Gfoff(V(plus,minus)))*Winoff(V(state,0))}
+Vxon p1 0 {x_on}
+Vxoff p2 0 {x_off}
+Dxon p1 state Dbreak
+Dxoff state p2 Dbreak
+
+
+******IV relationships********
+*Linear*
+.func iv_rel(x)={R_on+((R_off-R_on)*(x-x_on))/(x_on-x_off)}
+
+*Exponential*
+*.func iv_rel(x)={R_on*exp((lamda_y*(x-x_on))/(x_off-x_on))}
+******************************
+
+Gm plus n0 VALUE={V(plus, minus)/iv_rel(V(state,0))}
+Rs n0 minus 0.01
+.ENDS

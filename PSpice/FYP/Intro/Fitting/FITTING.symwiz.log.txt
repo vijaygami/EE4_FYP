@@ -1,0 +1,6 @@
+STATUS: PSpice Model Import Wizard for "Capture" (16.6.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\FITTING\FITTING.DSN
+   INFO: Symbol Name: @FITTING.SCHEMATIC1(sch_1):INS413@VTEAM.VTEAM.Normal(chips)
+STATUS: 0 Error messages, 0 Warning messages

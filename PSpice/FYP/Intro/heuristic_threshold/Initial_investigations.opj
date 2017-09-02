@@ -1,0 +1,109 @@
+(ExpressProject "Initial_investigations"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\initial_investigations.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\initial_investigations-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\initial_investigations-pspicefiles\schematic1\initial_investigations.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\initial_investigations-pspicefiles\schematic1\initial_investigations.sim"
+        (DisplayName "SCHEMATIC1-Initial_investigations")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\initial_investigations-pspicefiles\vteam.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\initial_investigations-pspicefiles\vteam.lib"))
+      (File ".\initial_investigations-pspicefiles\team.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\initial_investigations-pspicefiles\team.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TEAM
+      (FullPartName "TEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\HEURISTIC_THRESHOLD\INITIAL_INVESTIGATIONS-PSPICEFILES\TEAM.OLB")
+      (DeviceIndex "0"))
+    (VTEAM
+      (FullPartName "VTEAM.Normal")
+      (LibraryName
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\HEURISTIC_THRESHOLD\INITIAL_INVESTIGATIONS-PSPICEFILES\VTEAM.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IPULSE
+      (FullPartName "IPULSE.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL_FILE
+      (FullPartName "VPWL_FILE.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Vijay\Google Drive\PSpice\FYP\Testing\Initial_investigations-PSpiceFiles")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investigations.dsn")
+      (Path "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investigations.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Vijay\Google Drive\PSpice\FYP\Intro\heuristic_threshold\initial_investigations.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 431"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 25 1665 25 490")
+        (Scroll "274 670")
+        (Zoom "216")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\VIJAY\GOOGLE DRIVE\PSPICE\FYP\INTRO\HEURISTIC_THRESHOLD\INITIAL_INVESTIGATIONS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Vijay"))

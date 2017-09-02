@@ -1,0 +1,10 @@
+* source IMPLY_GATE
+V_Vin1         SIN1 0   PWL   
++ FILE "C:\Users\Vijay\Google Drive\PSpice\FYP\IMLPY\Driver\v1.txt" 
+R_R_test1         0 VIN1  50K TC=0,0 
+X_S2    SIN1 0 SIN1 VIN1 SCHEMATIC1_S2 
+
+.subckt SCHEMATIC1_S2 1 2 3 4  
+S_S2         3 4 1 2 Sbreak
+RS_S2         1 2 1G
+.ends SCHEMATIC1_S2
